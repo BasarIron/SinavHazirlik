@@ -1,12 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website.1</title>
+    <title>Kediler Hakkında Her Şey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe4e1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff1493;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: #ff69b4;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #fff0f5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .section h2 {
+            color: #ff1493;
+        }
+
+        .cat-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .cat-image:hover {
+            transform: scale(1.05);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #ff1493;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff1493;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #ff69b4;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .cat-fact {
+            background-color: #fff;
+            border: 2px solid #ff1493;
+            border-radius: 10px;
+            width: 45%;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cat-fact img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .cat-fact h3 {
+            color: #ff1493;
+        }
+        
+        .cat-fact p {
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .cat-fact {
+                width: 100%;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
-    <p style="color: red;">bu bir paragraf</p>
+
+    <header>
+        Kediler Hakkında Her Şey
+    </header>
+
+    <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#">Kedilerin Özellikleri</a>
+        <a href="#">Kediler ve Tarih</a>
+        <a href="#">Kedi Bakımı</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="content-container">
+                <div class="cat-fact">
+                    <h3>Kedilerin Sevimliliği</h3>
+                    <p>Kediler, sahiplerinin kalbini çalan sevimliliğe sahip küçük canlardır. Kedilerin bakımlı tüyleri ve ince hareketleri onları çok cazip kılar.</p>
+                    <img src="https://placekitten.com/800/400" alt="Sevimli bir kedi">
+                </div>
+
+                <div class="cat-fact">
+                    <h3>Kedilerin Duyusal Becerileri</h3>
+                    <p>Kediler çok iyi avcılar olarak tanınır. Koku alma, işitme ve görme yetenekleri çok güçlüdür, bu da onların avlarını takip etmelerine yardımcı olur.</p>
+                    <img src="https://placekitten.com/801/400" alt="Bir kedi">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-container">
+                <div class="cat-fact">
+                    <h3>Kediler ve Tarih</h3>
+                    <p>Kediler, insanlık tarihinin çok eski zamanlarından beri evcil hayvan olarak bizimle birlikte yaşamaktadır. Antik Mısır'da kutsal kabul edilirlerdi.</p>
+                    <img src="https://placekitten.com/802/400" alt="Eski Mısır kedisi">
+                </div>
+
+                <div class="cat-fact">
+                    <h3>Kediler İçin Bakım İpuçları</h3>
+                    <p>Kediler, tüy bakımı, düzenli yemek ve temizlik gibi dikkat gerektiren hayvanlardır. Tüylerinin düzenli fırçalanması çok önemlidir.</p>
+                    <img src="https://placekitten.com/803/400" alt="Kedi bakımı">
+                </div>
+            </div>
+        </section>
+
+        <section class="quote">
+            <p>"Bir kedi, insanın en iyi arkadaşı değil, ama insanı kendine aşık eden bir hayvandır." - Jean Cocteau</p>
+        </section>
+
+        <section class="section">
+            <a href="#" class="button">Daha Fazla Bilgi</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Kediler Hakkında Bilgiler | Tüm Hakları Saklıdır
+    </footer>
+
 </body>
 </html>
+
